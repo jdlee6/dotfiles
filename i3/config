@@ -182,7 +182,10 @@ client.background  					        $bg-color
 bindsym $mod+Ctrl+c exec google-chrome-stable
 bindsym $mod+Ctrl+d exec discord
 bindsym $mod+Ctrl+v exec code
-
+bindsym $mod+Ctrl+s exec spotify
+# bindsym $mod+Ctrl+x exec firefox
+bindsym $mod+Ctrl+o exec ms-office-online
+bindsym $mod+Ctrl+f exec xdg-open .
 
 ## Avoid tiling popups, dropdown windows from plasma
 # for the first time, manually resize them, i3 will remember the setting for floating windows
@@ -206,6 +209,8 @@ for_window [class="^.*"] border pixel 0
 # exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 exec --no-startup-id nitrogen --restore; sleep 1
 exec --no-startup-id compton
+
+# exec –no-startup-id xrandr --output DP-1 --right-of eDP-1 --scale 1.57x1.86
 
 # polybar startup ...
 # exec_always --no-startup-id $HOME/.config/polybar/launch.sh
