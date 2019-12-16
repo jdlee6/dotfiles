@@ -11,12 +11,12 @@ while count > 0:
     count -= 1
     if count == 0:
         subprocess.Popen(
-            ['xdg-open', '/home/joe/Downloads/niceudes.mp3'])
+            ['cvlc', '/home/joe/Downloads/niceudes.mp3'])
         print('Look out your window right now!\n')
-        # sleep the program for 25 seconds to rest eyes
+        # sleep the program for 40 seconds to rest eyes
         # alert again when time is up and restart counter
         time.sleep(40)
-        subprocess.Popen(['xdg-open', '/home/joe/Downloads/niceudes.mp3'])
+        subprocess.Popen(['cvlc', '/home/joe/Downloads/niceudes.mp3'])
         time.sleep(3)
         print('Restarting the program in 3 seconds . . .')
         count = 1500
