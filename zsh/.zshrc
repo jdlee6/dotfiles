@@ -115,7 +115,7 @@ alias wm="sudo nano .config/plasma-workspace/env/wm.sh"
 alias pb="sudo nano $HOME/.config/polybar/config"
 alias comp="sudo nano /etc/xdg/compton.conf"
 alias p=python3
-alias p2=python
+
 # Git Aliases
 function gc { git commit -m "$@"; }
 alias ga="git add --all"
