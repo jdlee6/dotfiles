@@ -126,6 +126,12 @@ alias gres="git reset"
 alias grem="git rm --cached"
 
 
+# Django
+alias mm="p manage.py makemigrations"
+alias m="p manage.py migrate"
+alias d="p manage.py runserver"
+
+
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export PATH=/home/joe/.gem/ruby/2.6.0/bin:$PATH
@@ -142,3 +148,5 @@ export __GLX_VENDOR_LIBRARY_NAME=nvidia glxgears
 
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+export VIRTUALENV_PYTHON=/usr/bin/python3.8
