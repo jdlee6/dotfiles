@@ -186,6 +186,7 @@ bindsym $mod+Ctrl+s exec spotify
 bindsym $mod+Ctrl+b exec firefox
 bindsym $mod+Ctrl+o exec ms-office-online
 bindsym $mod+Ctrl+f exec xdg-open .
+bindsym $mod+Ctrl+p exec postman
 
 ## Avoid tiling popups, dropdown windows from plasma
 # for the first time, manually resize them, i3 will remember the setting for floating windows
