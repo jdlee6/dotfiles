@@ -166,7 +166,7 @@ set $background  #000000
 set $transparent #00000000
 
 set $bg-color 	         #383C4A
-set $bd-color		 #91b6ff
+set $bd-color		 #a2bdff
 set $inactive-bg-color   #383C4A
 set $inactive-bd-color	 #383C4A
 set $text-color          #f3f4f5
@@ -204,15 +204,15 @@ for_window [class="Klipper"] floating enable; border none
 for_window [class="Plasmoidviewer"] floating enable; border none
 
 # (No) Title Bars
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 4
+
+exec --no-startup-id ~/.fehbg &
 
 # If using compton and nitrogen change below
 # exec --no-startup-id nitrogen --restore; sleep 1; compton -b
-exec --no-startup-id nitrogen --restore; sleep 1
-exec --no-startup-id compton
-
+# exec --no-startup-id nitrogen --restore &
+# exec --no-startup-id compton
 # exec –no-startup-id xrandr --output DP-1 --right-of eDP-1 --scale 1.57x1.86
-
 # polybar startup ...
 # exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # exec --no-startup-id $HOME/.config/polybar/i3listen.py
