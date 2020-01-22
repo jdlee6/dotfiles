@@ -183,7 +183,7 @@ bindsym $mod+Ctrl+c exec google-chrome-stable
 bindsym $mod+Ctrl+d exec discord
 bindsym $mod+Ctrl+v exec code
 bindsym $mod+Ctrl+s exec spotify
-bindsym $mod+Ctrl+b exec firefox
+bindsym $mod+Ctrl+b exec brave
 bindsym $mod+Ctrl+o exec ms-office-online
 bindsym $mod+Ctrl+f exec xdg-open .
 bindsym $mod+Ctrl+p exec postman
@@ -207,6 +207,8 @@ for_window [class="Plasmoidviewer"] floating enable; border none
 for_window [class="^.*"] border pixel 4
 
 exec --no-startup-id ~/.fehbg &
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id redshift -O 5700
 
 # If using compton and nitrogen change below
 # exec --no-startup-id nitrogen --restore; sleep 1; compton -b
