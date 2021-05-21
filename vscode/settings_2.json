@@ -1,0 +1,25 @@
+{
+    // "tslint.autoFixOnSave": true,
+    "workbench.colorTheme": "Dracula Soft",
+    "window.zoomLevel": 0,
+    "editor.fontSize": 13,
+    "terminal.integrated.fontSize": 15,
+    "editor.tabSize": 2,
+    "editor.fontFamily": "Dank Mono, Italic",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django",
+        "--errors-only"
+    ],
+    "editor.snippetSuggestions": "top",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.formatOnSave": true,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+}
